@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL-Shortner</title>
+    <link rel="icon" href="https://miro.medium.com/max/300/1*jcRqWsK1oYk3f77sbiDYEg.png">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+    <link rel="stylesheet" href="./static/styles/styles.css">
+</head>
+<body>
+    <h1 class="header"><img class="logo" src="https://miro.medium.com/max/300/1*jcRqWsK1oYk3f77sbiDYEg.png"></img>URL-Shortner</h1>
+    <div class="form-wrapper">
+        <div class="input-form">
+        <input 
+        type="text" 
+        class="input longURL" 
+        placeholder="Enter url to shorten...">
+        <button class="btn">Shorten</button>
+        </div>
+
+        <div class="output-form">
+        <input type="text" class="output" spellcheck="false" readonly>
+        <button class="btn copy" data-clipboard-target=".output">Copy</button>
+        </div>
+    </div>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Long Url</th>
+                <th>Short Url</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script src="./static/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  flex-direction: column;
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  bottom: 7px;
+  margin: 10px;
+}
+
+.form-wrapper {
+  height: 140px;
+  width: auto; 
+  padding: 6px 12px;
+  background: #fafafa;
+  border-radius: 4px;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.4);
+}
+
+.input-form {
+   margin-left: 10px;
+}
+
+.input {
+  width: 300px;
+  height: 29px;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.2s ease;
+  border: 2px solid #fafafa;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+    font-size: 1rem;
+}
+
+.longURL:focus {
+    border: 2px solid rgb(37, 156, 177);
+}
+
+h1 {
+  color: #fafafa;
+  text-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
+}
+
+.btn { 
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 3px;
+  background: rgb(36, 143, 36);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background: rgb(49, 173, 49);
+}
+
+.btn:active {
+  transform: scale(0.9);
+  background: rgb(23, 226, 23);
+}
+
+.output-form {
+  width: auto;
+  background: #fff;
+  display: flex;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 2px 11px;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  background: rgb(184, 86, 86);
+  animation: shake 0.82s ease both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.active .copy {
+    background: rgb(180, 105, 105);
+}
+
+.active .output {
+  color: #fff;
+  font-size: 1rem;
+  background: rgb(180, 105, 105);
+}
+
+.output {
+  width: 300px;
+  height: 29px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background: #fff;
+  position: relative;
+  bottom: 5px;
+}
+
+.output::selection {
+  background: none;
+  color: none;
+}
+
+.copy {
+  margin-left: 5px;
+  padding: 11px 21px;
+  background: rgb(30, 120, 180);
+}
+
+.copy:hover {
+  background: rgb(63, 151, 209);
+}
+
+.copy:active { 
+  background: rgb(47, 144, 209);
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.7em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.4);
+}
+
+.content-table thead tr {
+  background: rgb(30, 120, 180);
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background: #e2e2e2;
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+  background: #fafafa;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 4px solid rgb(30, 120, 180);
+}
+
+@media screen and (max-width: 600px) {
+  .form-wrapper {
+    width: 320px;
+    height: auto;
+  }
+
+  .input {
+    position: relative;
+    right: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 10px;
+    position: relative;
+    right: 13px;
+  }
+
+  .output-form {
+    position: relative;
+    width: 280px;
+  }
+
+  .output {
+    width: 180px;
+    position: relative;
+    left: 11px;
+  }
+
+  .copy {
+    position: relative;
+    left: 7px;
+  }
+
+  .content-table {
+    min-width: 300px;
+    font-size: 0.4em;
+  }
+
+}
